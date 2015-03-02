@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="abrir pág web"
+        android:id="@+id/web"
+        android:layout_above="@+id/llamar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="pgWeb" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="llamar  por teléfono"
+        android:id="@+id/llamar"
+        android:layout_above="@+id/maps"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="llamadaTelefono" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Google maps"
+        android:id="@+id/maps"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="googleMaps" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="tomar foto"
+        android:id="@+id/foto"
+        android:layout_below="@+id/maps"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="tomarFoto" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="mandar correo"
+        android:id="@+id/email"
+        android:layout_below="@+id/foto"
+        android:layout_centerHorizontal="true"
+        android:onClick="mandarCorreo" />
+</RelativeLayout>
